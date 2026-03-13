@@ -1,4 +1,4 @@
-body{
+/* body{
     margin:0;
     font-family: sans-serif;
 }
@@ -52,4 +52,85 @@ body{
   background:#ff5a00;
   height:300px;
   border-bottom-left-radius:150px;
-  border-bottom-right-radius:150px;}
+  border-bottom-right-radius:150px;} */
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.header{
+    min-height:100vh;
+    padding:60px 20px;
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+}
+
+/* header text */
+
+.header-top h1{
+    font-size:48px;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.header-top p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.header-top span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+/* team cards */
+
+.team{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* profile image */
+
+.profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    margin-bottom:15px;
+}
+
+/* text */
+
+.card h2{
+    margin:10px 0 5px;
+}
+
+.card h4{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.9;
+}
